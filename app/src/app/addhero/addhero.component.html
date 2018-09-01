@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+          <div class="form-group">
+            <label for="name">
+              Nom du hero
+            </label>
+            <input type="text" id="name" class="form-control"  name="hero" ngModel required>
+          </div>
+
+    </div>
+    </div>
+    <button class="btn btn-primary" type="submit" [disabled]="f.invalid">Enregistrer</button>
+</form>

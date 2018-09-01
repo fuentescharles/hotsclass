@@ -1,0 +1,22 @@
+.body{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+
+.hotsrolecontent{
+    border: solid;
+    border-color: rgba(84,5,255,0.3);
+    padding-bottom: 30px;
+    background-image: url(https://static.heroesofthestorm.com/images/nav-top-pattern.dae1fcdd34e3651e16f6b3b58c76ce18.png);
+    background-repeat: repeat-x;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(250, 0, 0, 0.19);
+
+}
+
+h2{
+    color:white;
+    display: flex;
+    justify-content: center;
+}

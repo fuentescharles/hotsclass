@@ -1,0 +1,51 @@
+
+<div class="body">
+    <img class="logo1"src="https://heroesofthestorm.com/static/images/heroes-2/logo-heroes-large.png">
+<div class="main-conteiner">
+
+<nav >
+
+  <div >
+
+    <div class="nav-counteiner" >
+        <img class="logo2" src="https://heroesofthestorm.com/static/images/heroes-2/logo-heroes-large.png">
+
+      <ul class="top-nav">
+
+
+          <li class="litopnav" routerLinkActive="active"><a routerLink="auth">Authentification</a></li>
+          <li class="litopnav" routerLinkActive="active"><a routerLink="hotsroles">Quelle rôle jouer dans HOTS ?</a></li>
+          <li class="litopnav" routerLinkActive="active"><a routerLink="addhero">Ajouter un hero</a></li>
+          <li class="dropdown" routerLinkActive="active">
+              <a href="javascript:void(0)" class="dropbtn">Conseils <span><fa-icon [icon]="['fa', 'angle-down']"></fa-icon></span></a>
+                <div class="dropdown-content">
+                        <a a routerLink="test">Tyrande</a>
+                        <a href="#">Chen</a>
+                        <a href="#">Sergent Marteau</a>
+                </div>
+
+            </li>
+
+            <li class="litopnav" routerLinkActive="active"><a routerLink="users">Utilisateurs</a></li>
+
+            <li class="boom"><a href="https://youtu.be/ySORA33T--E?t=1m10s">Quand tu tues un adversaire ça fait ?</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+<!--<div >
+
+<p class="seconde">Vous êtes connecté depuis {{ secondes }} secondes !</p>
+
+</div>-->
+    <div>
+
+      <router-outlet></router-outlet>
+
+    </div>
+
+</div>
+</div>

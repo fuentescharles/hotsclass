@@ -1,0 +1,38 @@
+<div class="body">
+
+        <div class="hotsrolecontent">
+            <h2>Les classes</h2>
+            <ul>
+                <app-hotsrole *ngFor="let hotsrole of hotsroles;let i = index"
+                 [hotsClasse] = "hotsrole.role"
+                 [hotsWin] = "hotsrole.win"
+                 [hotsLose] = "hotsrole.lose"
+                 [index]="i">
+             </app-hotsrole>
+
+            </ul>
+        </div>
+
+</div>
+
+<!--<div class="footer">
+
+              <ul class="top-footer">
+                    <h4>Restez connecté</h4>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+            </ul>
+
+
+
+         <ul>
+             <li>Venez jouer avec moi</li>
+              <li>Me contacter</li>
+               <li>Assistance</li>
+                <li>Mention Legales</li>
+                 <li><a class="unvcinq" href="https://youtu.be/bXHbPyYxuoE?t=2m27s">Quand tu fais un 1v5</a></li>
+
+         </ul>
+</div>
+-->

@@ -1,0 +1,160 @@
+
+.body{
+    background-image: url(https://heroesofthestorm.com/static/images/heroes-2/news/news-bg-372.jpg);
+    display: flex;
+    justify-content: space-around;
+    background-repeat: repeat-x;
+    height:2000px;
+    background-color: rgb(10,10,50);
+}
+
+.main-conteiner{
+    width:1224px;
+}
+
+.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     background-image: linear-gradient(to right, blue , rgb(62,20,107));
+    border:solid;
+    border-color: rgb(84,5,255);
+    border-width: 2px;
+    max-height: 47px;
+    width: 100%;
+    margin-top: 45px;
+    margin-left: 220px;
+    padding-left: 40px;
+}
+
+.litopnav a,.boom a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.litopnav,.dropdown {
+
+float: left;
+
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    border:solid;
+    border-color: black;
+    border-width: thin;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.seconde{
+    float: right;
+}
+
+.litopnav a:hover, .dropdown:hover .dropbtn, .boom a:hover,.dropdown-content a:hover {
+background-image: linear-gradient(rgba(91,255,255,0),rgba(91,255,255,0.5))
+}
+
+.nav-counteiner {
+    display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.boom{
+    float: right;
+}
+
+img{
+    position: absolute;
+
+}
+span {
+
+    margin-left: 5px;
+    padding-top: 5px;
+}
+.logo1{
+    display: none;
+}
+
+@media screen and (max-width: 1224px){
+
+    .main-conteiner{
+        width:100%;
+          padding-top: 100px;
+    }
+
+    .nav-countainer,.top-nav {
+        display: flex;
+      flex-direction: column;
+  justify-content:space-around;}
+
+   .nav-countainer{
+       padding-top: 2000px;
+   }
+
+      .top-nav{
+          max-height:none;
+          width:93%;
+          margin-top: 5px;
+          margin-left:5px;
+          background-image: linear-gradient(to bottom, blue , rgb(62,20,107))
+
+           }
+           .litopnav,.dropdown,.boom{
+               width:93%;
+               float: left;
+               border-top: dashed;
+               border-width: thin;
+               border-color: rgb(84,5,255);
+
+
+           }
+          .logo1{
+              display:block;
+          }
+          .logo2{
+              display: none;
+          }
+
+          .litopnav a,.boom a, .dropbtn {
+              display: inline-block;
+              color: white;
+              text-align:left;
+              padding: 14px 16px;
+              text-decoration: none;
+              text-transform: uppercase;
+              border-top: dashed;
+              border-width: thin;
+              border-color: rgb(84,5,255);
+          }
+
+          li{
+              display: flex;
+              justify-content: center;
+          }
+
+
+}

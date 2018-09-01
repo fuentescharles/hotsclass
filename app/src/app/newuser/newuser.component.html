@@ -1,0 +1,81 @@
+
+
+<style>
+input.ng-invalid:focus{
+    border-color: red;
+    border-width: 2px;
+    box-shadow: 2px 2px 5px grey;
+    }
+
+</style>
+
+
+<div class="body">
+<div class="formconteiner">
+    <h1>CREER UN COMPTE</h1>
+
+  <form [formGroup]="userForm" (ngSubmit)="onSubmitForm()">
+<div class="nomprenom">
+
+      <input type="text" id="firstName" class="form-control" formControlName="firstName" placeholder="Nom">
+
+      <input type="text" id="lastName" class="form-control" formControlName="lastName" placeholder="Prenom">
+
+</div>
+    <div class="datedenaissance">
+
+        <input type="text" id="jour" class="form-control" formControlName="jour" placeholder="Jour de naissance">
+        <select id="moi" class="form-control" formControlName="moi">
+
+          <option value="Janvier">Janvier</option>
+
+          <option value="Fevrier">Fevrier</option>
+
+        </select>
+
+        <input type="text" id="year" class="form-control" formControlName="year" placeholder="Année">
+
+    </div>
+
+    <div class="form-group">
+
+      <input type="text" id="email" class="form-control" formControlName="email" placeholder="Adresse mail">
+
+    </div>
+
+    <div class="form-group">
+
+      <input type="text" id="mdp" class="form-control" formControlName="password" placeholder="Mot de passe">
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="drinkPreference">Quelle role préférez-vous ?</label>
+
+      <select id="rolePreference" class="form-control" formControlName="rolePreference">
+
+        <option value="Guerrier">Guerrier</option>
+
+        <option value="Assassin">Assassin</option>
+
+        <option value="Heal">Heal</option>
+
+
+      </select>
+
+    </div>
+<div class="button-cont">
+    <button
+    *ngIf="userForm.valid"
+    type="submit" class="submitbuttonvalid" [disabled]="userForm.invalid">Soumettre</button>
+</div>
+
+<div class="button-cont">
+    <button
+    *ngIf="userForm.invalid" type="submit" class="submitbuttoninvalid" [disabled]="userForm.invalid"><span class="spanoff">Soumettre</span><span class="spanon">Veuillez vérifier les champs</span></button>
+</div>
+  </form>
+
+</div>
+</div>

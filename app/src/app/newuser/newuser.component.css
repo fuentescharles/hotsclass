@@ -1,0 +1,165 @@
+
+@font-face {
+  font-family: "cac_champagneregular";
+  src: url('/assets/cacchampagne_regular_macroman/cac_champagne-webfont.eot');
+
+    src: url('/assets/cacchampagne_regular_macroman/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('/assets/cacchampagne_regular_macroman/cac_champagne-webfont.woff') format('woff'),
+
+         url('/assets/cacchampagne_regular_macroman/cac_champagne-webfont.ttf') format('truetype'),
+
+         url('/assets/cacchampagne_regular_macroman/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+
+}
+
+
+h1,label /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'cac_champagneregular', Arial, serif;
+    color:white;
+}
+
+label{
+    font-size: 26px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formconteiner {
+margin-top: 100px;
+width: 35%;
+height: 900px;
+
+}
+
+h1{
+    display: flex;
+    justify-content: space-around;
+}
+
+div input,div select{
+    background-color: black;
+}
+
+input::-moz-placeholder /*for moz 19+ only*/
+{
+ color: white;
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 10px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: solid;
+    border-color: grey;
+    border-width: thin;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:white;
+}
+
+.datedenaissance{
+
+display: flex;
+justify-content: space-between;
+}
+.nomprenom{
+    display: flex;
+    justify-content: space-between;
+}
+.nomprenom input{
+    width: 49.7%
+}
+
+.datedenaissance input,.datedenaissance select {
+    width:32.9%;
+}
+
+.button-cont{
+    display: flex;
+    justify-content: center;
+}
+.submitbuttonvalid{
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    transition-property: background-color width height;
+    transition-duration: 2s;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   background-color: grey;
+
+}
+.submitbuttonvalid:hover{
+
+
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: rgb(5,255,103);
+  width:300px;
+  height: 50px;
+
+}
+
+.submitbuttoninvalid{
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    transition-property: background-color width height;
+    transition-duration: 2s;
+   border: none;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   background-color: grey;
+
+}
+.submitbuttoninvalid:hover{
+
+
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: red;
+  width:300px;
+  height: 50px;
+
+}
+
+.spanon{
+    display: none;
+}
+.submitbuttoninvalid:hover .spanon{
+    display: flex;
+    justify-content: center;
+}
+
+.submitbuttoninvalid:hover .spanoff{
+    display: none;
+}
+ @keyframes submitbutton {
+    from {background-color: white;}
+    to {background-color: green;}
+}
